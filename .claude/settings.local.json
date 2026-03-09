@@ -25,7 +25,8 @@
       "Bash(git commit:*)",
       "Bash(gh repo create:*)",
       "Bash(git remote add origin git@github.com:William9701/Boss_Oke_Forex.git)",
-      "Bash(git push -u origin master)"
+      "Bash(git push -u origin master)",
+      "Bash(git filter-branch:*)"
     ],
     "deny": [],
     "ask": []
