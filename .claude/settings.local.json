@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install:*)",
+      "Bash(python:*)",
+      "Bash(dir:*)",
+      "Read(//c/Users/ASUS/AppData/Roaming/MetaQuotes/Terminal/**)",
+      "Bash(git clone:*)",
+      "Read(//c/Users/ASUS/Desktop/**)",
+      "Read(//c/Program Files/MetaTrader 5/**)",
+      "Read(//c/**)",
+      "Bash(\"/c/Program Files/MetaTrader 5/MetaEditor64.exe\" /compile:\"C:\\Users\\ASUS\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Indicators\\PatternDetector_v3.mq5\" /log)",
+      "Bash(cmd.exe:*)",
+      "Bash(cat:*)",
+      "Bash(copy:*)",
+      "Bash(\"/c/Program Files/MetaTrader 5/MetaEditor64.exe\" /compile:\"C:\\Users\\ASUS\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Indicators\\HeadShouldersDetector_v5.mq5\" /log)",
+      "Bash(MetaEditor64.exe /compile:\"C:\\Users\\ASUS\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Indicators\\HeadShouldersDetector_v5.mq5\")",
+      "Bash(\"/c/Program Files/MetaTrader 5/MetaEditor64.exe\" /compile:\"C:\\Users\\ASUS\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Indicators\\HeadShouldersDetector_v7.mq5\" /log)",
+      "Bash(./MetaEditor64.exe /compile:\"C:\\Users\\ASUS\\AppData\\Roaming\\MetaQuotes\\Terminal\\D0E8209F77C8CF37AD8BF550E51FF075\\MQL5\\Indicators\\HeadShouldersDetector_v7.mq5\" /log)",
+      "Bash(timeout:*)",
+      "Bash(pip show:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

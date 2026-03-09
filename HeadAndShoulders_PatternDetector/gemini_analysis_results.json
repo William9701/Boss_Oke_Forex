@@ -1,0 +1,260 @@
+[
+  {
+    "symbol": "EURUSD",
+    "patterns": 1,
+    "details": {
+      "patterns_found": [
+        {
+          "type": "Inverse H&S",
+          "confidence": 90,
+          "left_shoulder": {
+            "date": "2020-03",
+            "price": 1.063
+          },
+          "head": {
+            "date": "2022-09",
+            "price": 0.953
+          },
+          "right_shoulder": {
+            "date": "2023-10",
+            "price": 1.045
+          },
+          "neckline": {
+            "slope": "downward",
+            "price_range": "connecting 1.2250 (2021-06) and 1.1000 (2023-04). Estimated breakout around 1.0900."
+          },
+          "quality_notes": "This is a very high-quality Inverse Head & Shoulders pattern on the monthly chart. The head is unequivocally the lowest point, marking a significant multi-year low. Both left and right shoulders are clearly defined swing lows, with good relative symmetry in terms of depth. The pattern formed after a prolonged bearish trend, providing a strong reversal signal. The neckline, clearly illustrated by the green line, connects two intermediate swing highs, offering a definitive resistance level that has since been broken. The structure is clean and unambiguous.",
+          "trading_setup": {
+            "entry": "1.1000",
+            "target": "1.2350",
+            "stop": "1.0400"
+          }
+        }
+      ],
+      "total_patterns": 1,
+      "chart_analysis": "The EURUSD monthly chart reveals a significant shift in market dynamics following a multi-year downtrend that culminated in late 2022. The detected Inverse Head & Shoulders pattern is a classic bullish reversal formation, suggesting that the long-term bearish bias is likely exhausted. Technical indicators support this view: the RSI(14) has recovered from deeply oversold territory and is now comfortably above the 60 level, indicating strong bullish momentum. Furthermore, the price has broken above the 50-period Simple Moving Average (SMA), and the 'Price - SMA50' trend indicator has turned definitively green, affirming the initiation of a new uptrend. The breakout above the Inverse H&S neckline, which occurred around early 2024, has been sustained, signaling robust buying interest. While a retest of the broken neckline cannot be ruled out, the overall structure points towards further upside potential, targeting levels not seen since mid-2021."
+    }
+  },
+  {
+    "symbol": "GBPUSD",
+    "patterns": 3,
+    "details": {
+      "patterns_found": [
+        {
+          "type": "Bearish H&S",
+          "confidence": 90,
+          "left_shoulder": {
+            "date": "2007-04",
+            "price": 2.005
+          },
+          "head": {
+            "date": "2007-11",
+            "price": 2.115
+          },
+          "right_shoulder": {
+            "date": "2008-04",
+            "price": 2.0
+          },
+          "neckline": {
+            "slope": "downward",
+            "price_range": "1.9450-1.8950"
+          },
+          "quality_notes": "An excellent example of a Bearish H&S pattern, forming at the end of a long-term uptrend. The left and right shoulders exhibit remarkable symmetry in price, and the head is clearly the highest peak. The downward-sloping neckline provides a clear resistance break upon confirmation. This pattern successfully preceded a significant downtrend.",
+          "trading_setup": {
+            "entry": "1.8800",
+            "target": "1.6600",
+            "stop": "1.9500"
+          }
+        },
+        {
+          "type": "Inverse H&S",
+          "confidence": 95,
+          "left_shoulder": {
+            "date": "2008-12",
+            "price": 1.405
+          },
+          "head": {
+            "date": "2009-02",
+            "price": 1.35
+          },
+          "right_shoulder": {
+            "date": "2009-07",
+            "price": 1.4
+          },
+          "neckline": {
+            "slope": "upward",
+            "price_range": "1.4550-1.5550"
+          },
+          "quality_notes": "A textbook Inverse H&S pattern following a sharp downtrend. The shoulders are highly symmetrical, and the head is unequivocally the lowest point. The upward-sloping neckline is a classic feature, indicating strong bullish momentum building up. This pattern offered a high-probability reversal signal.",
+          "trading_setup": {
+            "entry": "1.6000",
+            "target": "1.8050",
+            "stop": "1.5000"
+          }
+        },
+        {
+          "type": "Bearish H&S",
+          "confidence": 80,
+          "left_shoulder": {
+            "date": "2014-01",
+            "price": 1.66
+          },
+          "head": {
+            "date": "2014-07",
+            "price": 1.71
+          },
+          "right_shoulder": {
+            "date": "2014-11",
+            "price": 1.61
+          },
+          "neckline": {
+            "slope": "downward",
+            "price_range": "1.6000-1.5000"
+          },
+          "quality_notes": "A well-defined Bearish H&S pattern, albeit with slightly less perfect shoulder symmetry than the 2007-08 example (RS is ~500 pips lower than LS). The head is the highest point, and the structure is clear. It followed a significant rally and correctly anticipated a major decline.",
+          "trading_setup": {
+            "entry": "1.4800",
+            "target": "1.2700",
+            "stop": "1.5500"
+          }
+        }
+      ],
+      "total_patterns": 3,
+      "chart_analysis": "The GBPUSD monthly chart reveals a multi-year overarching downtrend from the 2007 highs. However, this macro trend is punctuated by significant counter-trend rallies and reversals, often signaled by classical chart patterns. We identified two high-quality Bearish Head & Shoulders patterns that marked major turning points from uptrends to downtrends (2007-08 and 2014). A robust Inverse Head & Shoulders pattern (2008-09) correctly signaled a major bullish reversal within the broader downtrend context. These patterns demonstrate the enduring utility of H&S analysis on long-term charts. The currently labeled 'INVERSE H&S (V9)' on the chart, while visually appealing, does not meet our strict criteria for a high-confidence pattern due to the right shoulder's low not being 'higher' than the left shoulder's low, and the price difference being too substantial for 'similar height' on this timeframe."
+    }
+  },
+  {
+    "symbol": "USDJPY",
+    "patterns": 1,
+    "details": {
+      "patterns_found": [
+        {
+          "type": "Inverse H&S",
+          "confidence": 70,
+          "left_shoulder": {
+            "date": "2010-06",
+            "price": 84.0
+          },
+          "head": {
+            "date": "2011-09",
+            "price": 75.5
+          },
+          "right_shoulder": {
+            "date": "2012-04",
+            "price": 80.5
+          },
+          "neckline": {
+            "slope": "downward",
+            "price_range": "86.00-82.00"
+          },
+          "quality_notes": "The pattern exhibits a clear 'head' as the lowest point, significantly below both shoulders. The right shoulder forms a higher low relative to the head, which is crucial for an inverse pattern. While the right shoulder (80.50) is slightly lower than the left shoulder (84.00), this difference of approximately 4% on a monthly timeframe is within acceptable limits for 'relative symmetry' in real-world trading. The neckline, connecting the swing highs between the shoulders and head (roughly 86.00 in 2011-03 and 78.00 in 2012-01), is downward sloping, indicating significant overhead resistance prior to the bullish reversal. The subsequent breakout above this neckline on substantial volume (as indicated by the Volume SMA) and the shift from a downtrend (red area in Trend indicator) to an uptrend (green area) provide strong confluence for this reversal pattern.",
+          "trading_setup": {
+            "entry": "82.50",
+            "target": "89.00",
+            "stop": "79.50"
+          }
+        }
+      ],
+      "total_patterns": 1,
+      "chart_analysis": "As a seasoned professional observing this USDJPY monthly chart, it's evident that identifying valid Head & Shoulders patterns on such a high timeframe requires strict adherence to classical definitions. The chart's 'Price (Denoised)' and 'ZigZag Pattern' accurately delineate the significant swing points necessary for analysis. We've identified one high-quality Inverse Head & Shoulders pattern. A potential Bearish Head & Shoulders pattern, indicated by the 'BEARISH H&S (V9)' label around 2014-2017, was thoroughly reviewed against the strict criteria. This pattern featured a Left Shoulder at approximately 102.00 (2014-06) and a Right Shoulder at 110.00 (2016-03), with the Head at 125.00 (2015-06). The significant disparity in height between the shoulders (102.00 vs 110.00, an ~8% difference) violates the 'relatively symmetrical' requirement. Furthermore, the sharply upward sloping neckline (from ~98.00 to ~112.00) makes it a poorly formed pattern by institutional standards, reducing its predictive reliability for a high-conviction trade setup. Therefore, it has been rejected as a valid, high-quality pattern."
+    }
+  },
+  {
+    "symbol": "AUDUSD",
+    "patterns": 1,
+    "details": {
+      "patterns_found": [
+        {
+          "type": "Bearish H&S",
+          "confidence": 75,
+          "left_shoulder": {
+            "date": "2010-10",
+            "price": 0.975
+          },
+          "head": {
+            "date": "2011-07",
+            "price": 1.108
+          },
+          "right_shoulder": {
+            "date": "2012-09",
+            "price": 1.06
+          },
+          "neckline": {
+            "slope": "upward",
+            "price_range": "0.8050-0.9780"
+          },
+          "quality_notes": "The pattern features a clear head as the highest point and well-defined swing highs for the shoulders. The neckline connects two significant reaction lows, forming an upward-sloping support line. The subsequent break of this neckline was decisive and led to a prolonged multi-year downtrend, confirming its bearish implications. The main factor reducing confidence is the lack of ideal symmetry in shoulder heights; the Right Shoulder (approx. 1.0600) is noticeably higher than the Left Shoulder (approx. 0.9750). While not perfectly symmetrical, its structural integrity and confirmed reversal action make it a recognizable, albeit imperfect, pattern on this monthly timeframe.",
+          "trading_setup": {
+            "entry": "0.9750 (confirmed monthly close below neckline after 2013-05)",
+            "target": "0.8470 (Head-to-Neckline projection)",
+            "stop": "1.0700 (above Right Shoulder)"
+          }
+        }
+      ],
+      "total_patterns": 1,
+      "chart_analysis": "The AUDUSD monthly chart from 2005 to the present reveals a significant market structure. The pair experienced a strong bullish trend in its earlier years, culminating in a major top formation identified as a Bearish Head & Shoulders pattern between late 2010 and late 2012. Following the definitive break of this pattern's upward-sloping neckline in mid-2013, AUDUSD entered a sustained and severe downtrend, losing considerable value over the next few years and hitting a multi-decade low around March 2020 (near 0.5900). \n\nPost-2020, the market saw a notable rebound, but since early 2021, price action has largely consolidated within a broad range, generally trading below or around the 50-period Simple Moving Average (SMA), which has acted as a dynamic resistance for much of this period. The RSI (14) has been oscillating between neutral to oversold territories, occasionally touching overbought levels during rallies but failing to sustain momentum for a new bullish trend. Volume, as indicated by the Vol SMA(20), has seen a gradual decline since the peak activity during the H&S formation and subsequent breakdown. \n\nCurrently (as of 2024-04), the price is attempting to consolidate above the 50 SMA, and the 'Price - SMA50' trend indicator shows a nascent bullish bias (green shaded area). However, without stronger conviction from volume and a sustained move above key resistance levels, the overall monthly outlook remains cautious, with the market appearing to be in a long-term basing or accumulation phase after the significant downtrend that followed the detected H&S reversal pattern."
+    }
+  },
+  {
+    "symbol": "NZDUSD",
+    "patterns": 2,
+    "details": {
+      "patterns_found": [
+        {
+          "type": "Inverse H&S",
+          "confidence": 95,
+          "left_shoulder": {
+            "date": "2008-04",
+            "price": 0.6
+          },
+          "head": {
+            "date": "2009-02",
+            "price": 0.49
+          },
+          "right_shoulder": {
+            "date": "2009-10",
+            "price": 0.6
+          },
+          "neckline": {
+            "slope": "downward",
+            "price_range": "0.7500 declining to 0.6600"
+          },
+          "quality_notes": "An exceptionally clear and robust Inverse H&S pattern on the monthly chart. The head is distinctively the lowest point, and both shoulders are remarkably symmetrical in their swing lows around 0.6000. The downward sloping neckline is well-defined by connecting the peaks between the shoulders and the head. Volume analysis (though not explicitly required, but part of a trader's assessment) would likely show an increase on the breakout. This pattern marked a significant long-term reversal.",
+          "trading_setup": {
+            "entry": "0.6700",
+            "target": "0.8300",
+            "stop": "0.5900"
+          }
+        },
+        {
+          "type": "Bearish H&S",
+          "confidence": 90,
+          "left_shoulder": {
+            "date": "2013-04",
+            "price": 0.85
+          },
+          "head": {
+            "date": "2014-07",
+            "price": 0.88
+          },
+          "right_shoulder": {
+            "date": "2014-11",
+            "price": 0.84
+          },
+          "neckline": {
+            "slope": "slightly upward",
+            "price_range": "0.8000 rising to 0.8200"
+          },
+          "quality_notes": "A well-formed Bearish H&S pattern, indicative of a major top. The head is clearly the highest point. The shoulders demonstrate good symmetry, with both the left and right shoulders forming around the 0.8400-0.8500 level. The neckline, connecting the valleys between the shoulders and head, is slightly upward sloping, which is a common and valid characteristic. The subsequent price action confirms the bearish implication of the pattern, leading to a substantial downtrend. RSI divergence (higher price high on head, but lower RSI high) would further validate this pattern.",
+          "trading_setup": {
+            "entry": "0.8150",
+            "target": "0.7500",
+            "stop": "0.8550"
+          }
+        }
+      ],
+      "total_patterns": 2,
+      "chart_analysis": "The NZDUSD monthly chart provides a compelling display of classic Head & Shoulders patterns, demonstrating their significant long-term predictive power. The Inverse H&S from 2008-2010 clearly signaled the end of a major downtrend and ushered in a multi-year bullish phase. Subsequently, the Bearish H&S from 2013-2015 marked a pivotal top, initiating a prolonged bearish trend. Both patterns exhibited clear structures, good shoulder symmetry, and well-defined necklines. The patterns are consistent with broader market dynamics on a monthly timeframe, suggesting institutional interest in these levels. Post-2015, the pair entered a more protracted consolidation and downtrend, without any further similarly clear H&S formations on this timeframe up to the current visible data."
+    }
+  }
+]

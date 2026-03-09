@@ -1,0 +1,51 @@
+V8 INSTITUTIONAL KEY LEVEL DETECTOR - COMPLETE LOGIC
+====================================================
+
+STEP 1: MAJOR SWING DETECTION (5-BAR PIVOTS)
+- Scan monthly candles for swing highs: high[i] > high[i±5] for ALL 5 bars left/right
+- Scan for swing lows: low[i] < low[i±5] for ALL 5 bars left/right
+- Only major extremes that capped multi-month trends qualify
+
+STEP 2: ZONE CLUSTERING
+- Group swing highs within 0.4-1.2x monthly ATR(14)
+- Group swing lows within same tolerance
+- Require MINIMUM 3 swing points to form a valid zone
+- Calculate zone mid, top, bottom
+
+STEP 3: REACTION VALIDATION (BRUTAL FILTER)
+For each potential zone:
+  a) Count historical touches (price enters zone)
+  b) For each touch, verify REAL REVERSAL:
+     - Must produce 500-1500+ pip move away (5-15% for EURUSD scale)
+     - Must occur within 3-6 months after touch
+     - Wick rejection preferred (strong monthly wick at zone)
+  c) REJECT if < 3-4 confirmed reactions
+  d) REJECT if no significant reversals (all weak bounces)
+
+STEP 4: CONFLUENCE SCORING
+- Round number proximity: +2 points
+- All-time/decade high-low: +3 points
+- Major Fib level (50%, 61.8% of multi-year swing): +2 points
+- Historical significance (15+ year old level): +1 point
+
+STEP 5: RECENT BREAK CHECK
+- If price closed >1.5x ATR beyond zone in last 12-24 months WITHOUT retest
+- REJECT or heavily downgrade (broken level)
+
+STEP 6: STRENGTH SCORING (1-10)
+- Touches: (touches / 7) * 4.0  (max 4 points for 7+ touches)
+- Reversal Quality: (big_reversals / touches) * 3.0  (max 3 points for 100% quality)
+- Confluence: confluence_score * 0.2  (max 2 points)
+- Recency: 1.0 if tested in last 24 months, 0.5 if 24-60 months, 0 if older
+
+STEP 7: OUTPUT TOP 4-7 ONLY
+- Sort by score descending
+- Output only scores >= 6.0 (institutional grade)
+- Maximum 7 levels per pair (prevent clutter)
+
+VISUALIZATION:
+- Thick horizontal zones (thicker = higher score)
+- Approach lines (dotted)
+- Touch circles with dates
+- Reversal arrows with pip magnitude
+- Label: "MONTHLY KEY RESISTANCE | Score 8.5/10 | 6 Touches | Est. Since 2008"

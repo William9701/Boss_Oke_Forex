@@ -1,0 +1,173 @@
+C:\Users\ASUS\Desktop\Boss_Oke_Forex\HeadAndShoulders_PatternDetector\head_shoulders_detector_v6.py:983: UserWarning: This figure includes Axes that are not compatible with tight_layout, so results might be incorrect.
+  plt.tight_layout()
+=== V6 Head & Shoulders Detection on NZDUSD (PRIORITIZE NECKLINE QUALITY) ===
+
+Including: Wavelet Denoising + Trend + Neckline Slope + RSI + Volume + Extended Neckline
+
+V6: Modified scoring to prioritize horizontal necklines over perfect shoulder symmetry
+
+Loaded 240 monthly bars
+
+================================================================================
+STEP 0: WAVELET DENOISING (84.5% ACCURACY)
+================================================================================
+Applying wavelet denoising to remove noise while preserving key features
+
+[OK] Wavelet denoising applied (Type: db4, Level: 1)
+  This method achieved 84.5% accuracy vs 78.5% for basic detection
+  Noise reduction improves pattern reliability
+
+================================================================================
+STEP 1: PRECEDING TREND DETECTION
+================================================================================
+Calculating 50-period SMA to confirm downtrend before Inverse H&S pattern
+
+[OK] 50-period SMA calculated for trend confirmation
+  Rule: For Inverse H&S, price must be BELOW SMA when Left Shoulder forms
+
+================================================================================
+STEP 2: RSI CALCULATION FOR DIVERGENCE
+================================================================================
+Calculating 14-period RSI to detect bullish divergence at Head
+
+[OK] 14-period RSI calculated
+  Rule: At Head (lowest price), RSI should show higher low vs Left Shoulder
+  This indicates weakening selling momentum = bullish divergence
+
+================================================================================
+STEP 3: VOLUME ANALYSIS PREPARATION
+================================================================================
+Calculating volume averages for breakout confirmation
+
+[OK] 20-period Volume SMA calculated
+  Rule: Right Shoulder should show LOWER volume than Left Shoulder/Head
+  Rule: Breakout should show 20%+ volume surge above recent average
+
+================================================================================
+STEP 4: ZIGZAG STRUCTURAL DETECTION ON DENOISED DATA
+================================================================================
+Finding swing highs and lows using order-based extrema detection
+
+Found 15 swing highs and 14 swing lows
+[OK] After prominence filter: 11 highs, 11 lows
+  These are the candidate structural troughs for L-H-R pattern
+
+
+[V6 DEBUG] ALL swing highs (before prominence filter @ 8%):
+  2007-07 @ 0.7866 (prom: 25.3%) [OK]
+  2008-02 @ 0.7969 (prom: 26.2%) [OK]
+  2009-10 @ 0.7489 (prom: 21.5%) [OK]
+  2011-08 @ 0.8606 (prom: 17.3%) [OK]
+  2012-03 @ 0.8442 (prom: 13.6%) [OK]
+  2013-04 @ 0.8662 (prom: 9.6%) [OK]
+  2016-11 @ 0.7434 (prom: 8.6%) [OK]
+  2017-08 @ 0.7425 (prom: 11.2%) [OK]
+  2019-01 @ 0.6890 (prom: 4.6%) [FILTERED]
+  2020-01 @ 0.6849 (prom: 4.0%) [FILTERED]
+  2021-02 @ 0.7121 (prom: 12.9%) [OK]
+  2022-04 @ 0.7057 (prom: 14.1%) [OK]
+  2023-02 @ 0.6561 (prom: 9.4%) [OK]
+  2024-10 @ 0.6221 (prom: 4.5%) [FILTERED]
+  2025-08 @ 0.6297 (prom: 5.6%) [FILTERED]
+
+[V6 DEBUG] Prominent highs AFTER filter (>=8% prominence):
+  0: 2007-07 @ 0.7866 (prom: 25.3%)
+  1: 2008-02 @ 0.7969 (prom: 26.2%)
+  2: 2009-10 @ 0.7489 (prom: 21.5%)
+  3: 2011-08 @ 0.8606 (prom: 17.3%)
+  4: 2012-03 @ 0.8442 (prom: 13.6%)
+  5: 2013-04 @ 0.8662 (prom: 9.6%)
+  6: 2016-11 @ 0.7434 (prom: 8.6%)
+  7: 2017-08 @ 0.7425 (prom: 11.2%)
+  8: 2021-02 @ 0.7121 (prom: 12.9%)
+  9: 2022-04 @ 0.7057 (prom: 14.1%)
+  10: 2023-02 @ 0.6561 (prom: 9.4%)
+
+================================================================================
+STEP 5A: INVERSE H&S PATTERN DETECTION WITH PROFESSIONAL FILTERS
+================================================================================
+Scanning all L-H-R combinations and applying multi-layer filters
+
+[OK] Scanned 15 L-H-R combinations
+
+Filter Results:
+  - Bar spacing:         2 passed
+  - Head depth:          1 passed
+  - Head prominence:     1 passed
+  - Shoulder symmetry:   1 passed
+  - [V5] Downtrend:      1 passed <- V4
+  - [V5] Neckline slope: 1 passed <- V4
+  - [V5] RSI divergence: 0 passed <- V4
+  - [V5] Volume exhaust: 0 passed <- V4
+
+================================================================================
+BEST INVERSE H&S PATTERN FOUND
+================================================================================
+
+[STRUCTURE]
+  Left Shoulder:  2006-03 at 0.61
+  Head:           2009-02 at 0.54 (prominence: 39.77%)
+  Right Shoulder: 2010-05 at 0.64
+  Shoulder diff:  5.52%
+
+[NECKLINE]
+  Peak1: 2008-02 at 0.80
+  Peak2: 2009-10 at 0.75
+  Slope: -0.14° ([OK] GOOD)
+
+[RSI DIVERGENCE]
+  [X] No RSI divergence
+
+[VOLUME SIGNATURE]
+  [!] No volume exhaustion
+
+[FINAL SCORE]
+  176.37
+
+================================================================================
+
+================================================================================
+STEP 5B: BEARISH H&S PATTERN DETECTION WITH PROFESSIONAL FILTERS
+================================================================================
+Scanning all L-H-R combinations and applying multi-layer filters
+
+  [V6 DEBUG] LS=2009-10, H=2011-08, RS=2016-11: score=121.12, shoulder_diff=0.7%, neckline_diff=1.4%, angle=0.01°
+[OK] Scanned 4 L-H-R combinations
+
+Filter Results:
+  - Bar spacing:         4 passed
+  - Head height:         4 passed
+  - Head prominence:     2 passed
+  - Shoulder symmetry:   2 passed
+  - [V5] Uptrend:        2 passed <- V4
+  - [V5] Neckline slope: 2 passed <- V4
+  - [V5] RSI divergence: 0 passed <- V4
+  - [V5] Volume exhaust: 0 passed <- V4
+
+================================================================================
+BEST BEARISH H&S PATTERN FOUND
+================================================================================
+
+[STRUCTURE]
+  Left Shoulder:  2009-10 at 0.75
+  Head:           2011-08 at 0.86 (prominence: 17.27%)
+  Right Shoulder: 2016-11 at 0.74
+  Shoulder diff:  0.74%
+
+[NECKLINE]
+  Valley1: 2010-05 at 0.64
+  Valley2: 2015-08 at 0.65
+  Slope: 0.01° ([OK] GOOD)
+
+[RSI DIVERGENCE]
+  [X] No RSI divergence
+
+[VOLUME SIGNATURE]
+  [!] No volume exhaustion
+
+[FINAL SCORE]
+  121.12
+
+================================================================================
+
+Chart saved to: C:\Users\ASUS\Desktop\Boss_Oke_Forex\HeadAndShoulders_PatternDetector\head_shoulders_v6_detection.png
