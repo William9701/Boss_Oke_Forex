@@ -4,6 +4,14 @@ stock-pattern-recorginition/
 PatternPy/
 code/
 
+# Environment variables and secrets
+.env
+.env.local
+*.key
+*_key.txt
+credentials.json
+secrets.json
+
 # Python
 __pycache__/
 *.py[cod]

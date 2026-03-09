@@ -22,13 +22,18 @@ pip install google-generativeai pillow
 - Copy your key
 
 ### 3. Configure the Script
-Open `test_gemini_detector.py` and replace:
-```python
-API_KEY = "YOUR_GEMINI_API_KEY_HERE"
+Set your API key as an environment variable:
+```bash
+# Windows
+set GEMINI_API_KEY=your_actual_key_here
+
+# Linux/Mac
+export GEMINI_API_KEY=your_actual_key_here
 ```
-With your actual key:
-```python
-API_KEY = "AIzaSyC_your_actual_key_here"
+
+Or create a `.env` file in the project root:
+```
+GEMINI_API_KEY=your_actual_key_here
 ```
 
 ### 4. Run the Detector

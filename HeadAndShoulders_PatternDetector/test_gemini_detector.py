@@ -10,7 +10,8 @@ import os
 # ============================================
 # STEP 1: SET YOUR GEMINI API KEY HERE
 # ============================================
-API_KEY = "AIzaSyB347Qy8qcOx5q5SAPGe1547xS1jLMhC4g"
+import os
+API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY_HERE")
 
 # ============================================
 # STEP 2: Initialize Detector
